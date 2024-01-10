@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.container > .left-side {
+  flex: 1 0;
+  background-image: url(background.jpeg);
+}
+
+.container > .right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+div > .right-header {
+  background-color: azure;
+  flex: 1 1 90px;
+  border: 1px red solid;
+}
+
+.container div {
+  flex: 1;
+  width: 65vw;
+}
