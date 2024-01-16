@@ -1,30 +1,65 @@
+:root {
+}
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
+.right-header h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h3.h3-sign-up {
+  margin-top: 30px;
+}
+
+img[src="background.jpeg"] {
+  height: 100vh;
+  width: auto;
+}
+
 .container {
   display: flex;
   flex-direction: row;
   height: 100vh;
 }
 
-.container > .left-side {
-  flex: 1 0;
-  background-image: url(background.jpeg);
+.left-side {
+  max-width: clamp(10vw, 50%, 50vw);
 }
 
-.container > .right-side {
+.container .right-side {
   display: flex;
   flex-direction: column;
 }
 
-div > .right-header {
-  background-color: azure;
-  flex: 1 1 90px;
-  border: 1px red solid;
+.right-side > .right-header {
+  background-color: rgb(250, 250, 251);
+  height: 37.5%;
+  padding-top: 150px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+  padding-left: 40px;
 }
 
-.container div {
-  flex: 1;
-  width: 65vw;
+.right-side > .right-body {
+  height: 25%;
+  padding: 20px 300px 20px 40px;
+  background-color: white;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.right-side > .right-footer {
+  background-color: rgb(250, 250, 251);
+  height: 37.5%;
+  padding: 20px 300px 20px 40px;
 }

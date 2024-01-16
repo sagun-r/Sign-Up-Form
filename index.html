@@ -9,46 +9,85 @@
   </head>
   <body>
     <div class="container">
-      <div class="left-side"></div>
+      <div class="left-side">
+        <img src="background.jpeg" alt="" srcset="" />
+      </div>
       <div class="right-side">
         <div class="right-header">
-          <h3>
-            This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams.
-          </h3>
-          <h3>Sign up <em>now</em> to get started.</h3>
+          <div>
+            <h3>
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+            </h3>
+            <h3>Sign up <em>now</em> to get started.</h3>
 
-          <h3>You <em>know</em> you want to.</h3>
+            <h3 class="h3-sign-up">You <em>know</em> you want to.</h3>
+          </div>
         </div>
 
         <div class="right-body">
-          <form action="" method="get">
-            Let's do this!
-
+          <h2>Let's do this!</h2>
+          <form action="" method="get" id="a-form">
             <label for="fname">First Name</label>
-            <input type="text" name="first-name" id="fname" />
+            <input
+              type="text"
+              name="first-name"
+              id="fname"
+              placeholder="John"
+              required
+            />
 
             <label for="lname">Last Name</label>
-            <input type="text" name="last-name" id="lname" />
+            <input
+              type="text"
+              name="last-name"
+              id="lname"
+              placeholder="Doe"
+              required
+            />
 
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@email.com"
+              required
+            />
 
             <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone" />
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="1235551234"
+              required
+            />
 
             <label for="pwd">Password</label>
-            <input type="password" name="password" id="pwd" />
+            <input
+              type="password"
+              name="password"
+              id="pwd"
+              placeholder="·············"
+              required
+            />
 
             <label for="confirm-pwd">Confirm Password</label>
-            <input type="password" name="confirm-password" id="confirm-pwd" />
-            <div class="right-footer">
-              <button type="submit">Create Account</button>
-              <p>
-                Already have an account? <a href="http://google.com">Log in </a>
-              </p>
-            </div>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-pwd"
+              placeholder="·············"
+              required
+            />
           </form>
+        </div>
+        <div class="right-footer">
+          <button type="submit" form="a-form">Create Account</button>
+          <p>
+            Already have an account? <a href="http://google.com">Log in </a>
+          </p>
         </div>
       </div>
     </div>
