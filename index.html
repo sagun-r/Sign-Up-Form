@@ -28,63 +28,90 @@
         <div class="right-body">
           <h2>Let's do this!</h2>
           <form action="" method="get" id="a-form">
-            <label for="fname">First Name</label>
-            <input
-              type="text"
-              name="first-name"
-              id="fname"
-              placeholder="John"
-              required
-            />
+            <div class="row">
+              <div class="title">
+                <label for="fname">FIRST NAME</label>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="fname"
+                  placeholder="John"
+                  required
+                />
+              </div>
+              <div class="title">
+                <label for="email">EMAIL</label>
+              </div>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="example@email.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="title">
+                <label for="lname">LAST NAME</label>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="lname"
+                  placeholder="Doe"
+                  required
+                />
+              </div>
+              <div class="title">
+                <label for="pwd">PASSWORD</label>
+              </div>
+              <div>
+                <input
+                  type="password"
+                  name="password"
+                  id="pwd"
+                  placeholder="·············"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="title">
+                <label for="phone">PHONE NUMBER</label>
+              </div>
+              <div>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="1235551234"
+                  required
+                />
+              </div>
 
-            <label for="lname">Last Name</label>
-            <input
-              type="text"
-              name="last-name"
-              id="lname"
-              placeholder="Doe"
-              required
-            />
+              <div class="title">
+                <label for="confirm-pwd">CONFIRM PASSWORD</label>
+              </div>
 
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="example@email.com"
-              required
-            />
-
-            <label for="phone">Phone Number</label>
-            <input
-              type="tel"
-              name="phone"
-              id="phone"
-              placeholder="1235551234"
-              required
-            />
-
-            <label for="pwd">Password</label>
-            <input
-              type="password"
-              name="password"
-              id="pwd"
-              placeholder="·············"
-              required
-            />
-
-            <label for="confirm-pwd">Confirm Password</label>
-            <input
-              type="password"
-              name="confirm-password"
-              id="confirm-pwd"
-              placeholder="·············"
-              required
-            />
+              <div>
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-pwd"
+                  placeholder="·············"
+                  required
+                />
+              </div>
+            </div>
           </form>
         </div>
         <div class="right-footer">
-          <button type="submit" form="a-form">Create Account</button>
+          <button type="submit" form="a-form">CREATE ACCOUNT</button>
           <p>
             Already have an account? <a href="http://google.com">Log in </a>
           </p>
