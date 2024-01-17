@@ -29,14 +29,16 @@ img[src="background.jpeg"] {
 }
 
 .left-side {
+  z-index: -1;
+  position: relative;
   max-width: 30vw;
 }
 
 img[src="sr-high-resolution-logo-black-transparent.png"] {
   position: absolute;
-  height: 90px;
-  top: 30%;
-  right: 160px;
+  max-width: 27vw;
+  top: 39%;
+  left: 15px;
 }
 
 .container .right-side {
