@@ -20,19 +20,16 @@ h3.h3-sign-up {
 
 img[src="background.jpeg"] {
   height: 100vh;
-  width: auto;
 }
 
 .container {
-  position: relative;
   display: flex;
   flex-direction: row;
   height: 100vh;
 }
 
 .left-side {
-  max-width: clamp(10vw, 50%, 50vw);
-  position: relative;
+  max-width: 30vw;
 }
 
 img[src="sr-high-resolution-logo-black-transparent.png"] {
@@ -121,4 +118,10 @@ footer {
 footer > a > img {
   height: 30px;
   margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  * {
+    background-color: black;
+  }
 }
