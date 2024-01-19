@@ -28,6 +28,12 @@ img[src="background.jpeg"] {
   height: 100vh;
 }
 
+.right-side {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(250, 250, 251);
+}
+
 .left-side {
   z-index: -1;
   position: relative;
@@ -41,12 +47,8 @@ img[src="sr-high-resolution-logo-black-transparent.png"] {
   left: 15px;
 }
 
-.container .right-side {
-  display: flex;
-  flex-direction: column;
-}
-
-.right-side .right-header {
+.right-header {
+  height: 320px;
   background-color: rgb(250, 250, 251);
   padding-top: 150px;
   padding-right: 200px;
@@ -54,15 +56,20 @@ img[src="sr-high-resolution-logo-black-transparent.png"] {
   padding-left: 40px;
 }
 
-.right-side .right-body {
+.right-body {
   padding: 20px 200px 20px 40px;
   background-color: white;
+}
+
+.right-footer {
+  background-color: rgb(250, 250, 251);
+  height: 368px;
+  padding: 20px 300px 20px 40px;
 }
 
 form {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
 }
 
 input:focus {
@@ -81,12 +88,6 @@ input:focus {
 
 label {
   font-size: 0.7rem;
-}
-
-.right-side > .right-footer {
-  background-color: rgb(250, 250, 251);
-  height: 39.5%;
-  padding: 20px 300px 20px 40px;
 }
 
 button {
@@ -110,25 +111,18 @@ button:focus {
 
 footer {
   display: flex;
-  padding-left: 40px;
+  justify-content: center;
+  font-size: 0.8em;
   align-items: center;
   background-color: rgb(250, 250, 251);
 }
 
 footer > a > img {
-  height: 30px;
+  height: 2em;
   margin-left: 10px;
 }
 
-@media (max-width: 600px) {
-  h1 {
-    background-color: black;
-  }
-}
-
-@media (max-width: 1015px) {
-  #row2,
-  #row3 {
-    margin-left: 10px;
-  }
+#row2,
+#row3 {
+  margin-left: 10px;
 }
