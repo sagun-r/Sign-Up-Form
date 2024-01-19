@@ -35,6 +35,8 @@ img[src="background.jpeg"] {
 }
 
 .left-side {
+  display: flex;
+  justify-content: center;
   z-index: -1;
   position: relative;
   max-width: 30vw;
@@ -45,6 +47,18 @@ img[src="sr-high-resolution-logo-black-transparent.png"] {
   max-width: 27vw;
   top: 39%;
   left: 15px;
+}
+
+.photo-credit {
+  position: absolute;
+  top: 98%;
+  color: rgb(250, 250, 251);
+  font-size: 0.6em;
+  font-weight: lighter;
+}
+
+.photo-credit a {
+  color: rgb(250, 250, 251);
 }
 
 .right-header {
