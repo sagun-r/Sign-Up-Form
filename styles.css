@@ -151,23 +151,22 @@ footer > a > img {
   }
 
   .left-side {
+    position: relative;
     display: flex;
     justify-content: left;
-    z-index: -1;
     width: 100vw;
     height: 250px;
   }
 
   img[src="background.jpeg"] {
-    min-width: 100vw;
+    min-width: 94.9vw;
     min-height: 1005px;
     transform: scale(1.108);
   }
 
   img[src="sr-high-resolution-logo-black-transparent.png"] {
     position: absolute;
-    left: 260px;
-    width: 100%;
+    left: 37vw;
     transform: scale(2);
   }
 
@@ -182,10 +181,10 @@ footer > a > img {
     text-align: center;
   }
 
-  .photo-credit {
+  span.photo-credit {
     position: absolute;
-    top: 94%;
     width: 100vw;
+    top: 94.5%;
   }
 
   .right-body {
@@ -209,12 +208,12 @@ footer > a > img {
     text-align: center;
   }
 
-  form input:focus {
-    color: red;
-  }
-
   .right-footer {
     height: 190px;
+  }
+
+  .right-footer > p {
+    width: 100vw;
   }
 
   #row2,
