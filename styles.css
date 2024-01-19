@@ -140,3 +140,75 @@ footer > a > img {
 #row3 {
   margin-left: 10px;
 }
+
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .left-side {
+    display: flex;
+    justify-content: left;
+    z-index: -1;
+    height: 250px;
+  }
+
+  img[src="background.jpeg"] {
+    transform: scale(1.46);
+    flex: 0 0 300px;
+  }
+
+  img[src="sr-high-resolution-logo-black-transparent.png"] {
+    position: absolute;
+    left: 260px;
+    width: 100%;
+    transform: scale(2);
+  }
+
+  .right-side {
+    display: flex;
+    justify-content: center;
+  }
+
+  .right-header {
+    padding: 30px 20px;
+    max-height: 175px;
+    text-align: center;
+  }
+
+  .right-body {
+    min-height: 400px;
+  }
+
+  form {
+    position: relative;
+    flex-direction: column;
+  }
+
+  form label {
+    position: absolute;
+    left: 3px;
+    margin-top: 1px;
+  }
+
+  form input {
+    width: 88vw;
+    height: 30px;
+    text-align: center;
+  }
+
+  form input:focus {
+    color: red;
+  }
+
+  .right-footer {
+    height: 190px;
+  }
+
+  #row2,
+  #row3 {
+    margin-left: 0px;
+  }
+}
