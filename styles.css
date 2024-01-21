@@ -106,6 +106,10 @@ label {
   font-size: 0.7rem;
 }
 
+input {
+  width: 190px;
+}
+
 button {
   height: 40px;
   width: 180px;
@@ -193,20 +197,28 @@ footer > a > img {
   }
 
   form {
+    display: flex;
     position: relative;
     flex-direction: column;
+    align-items: right;
+    width: fit-content;
   }
 
   form label {
     position: absolute;
     left: 3px;
-    margin-top: 1px;
+    font-size: 7px;
+    margin-top: 2px;
+    width: 121px;
+    text-align: left;
   }
 
   form input {
     width: 88vw;
     height: 30px;
-    text-align: center;
+    padding-top: 5px;
+    padding-left: 5px;
+    text-align: left;
   }
 
   .right-footer {
