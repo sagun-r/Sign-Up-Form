@@ -100,13 +100,14 @@ input:focus {
 
 .title {
   margin-top: 20px;
+  z-index: 1;
 }
 
 label {
   font-size: 0.7rem;
 }
 
-input {
+label input {
   width: 190px;
 }
 
@@ -193,7 +194,43 @@ footer > a > img {
   }
 
   .right-body {
-    min-height: 400px;
+    min-height: 330px;
+  }
+
+  #email,
+  #lname,
+  #pwd,
+  #phone,
+  #confirm-pwd {
+    position: absolute;
+  }
+
+  #lname {
+    top: 60px;
+  }
+
+  #phone {
+    top: 100px;
+  }
+
+  #email {
+    top: 140px;
+  }
+
+  #pwd {
+    top: 180px;
+  }
+
+  #confirm-pwd {
+    top: 220px;
+  }
+
+  .title label {
+    bottom: 9px;
+  }
+
+  label[for="fname"] {
+    bottom: 19px;
   }
 
   form {
@@ -222,7 +259,7 @@ footer > a > img {
   }
 
   .right-footer {
-    height: 190px;
+    height: 270px;
   }
 
   .right-footer > p {
