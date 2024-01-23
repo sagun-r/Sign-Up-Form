@@ -35,7 +35,7 @@
 
         <div class="right-body">
           <h2>Let's do this!</h2>
-          <form action="" method="get" id="a-form">
+          <form action="" method="" id="a-form">
             <div class="row">
               <div class="title">
                 <label for="fname">FIRST NAME</label>
@@ -80,10 +80,13 @@
               </div>
               <div>
                 <input
+                  class="pwd"
                   type="password"
                   name="password"
                   id="pwd"
                   tabindex="5"
+                  pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$"
+                  title="Must contain 8 or more characters with at least one letter and one number"
                   required
                 />
               </div>
@@ -108,6 +111,7 @@
 
               <div>
                 <input
+                  class="confirmPwd"
                   type="password"
                   name="confirm-password"
                   id="confirm-pwd"
@@ -116,10 +120,14 @@
                 />
               </div>
             </div>
+            <span class="hiddenPwd">* Password does not match</span>
           </form>
         </div>
+
         <div class="right-footer">
-          <button type="submit" form="a-form">CREATE ACCOUNT</button>
+          <button type="submit" form="a-form" class="submitBtn">
+            CREATE ACCOUNT
+          </button>
           <p>
             Already have an account? <a href="http://google.com">Log in </a>
           </p>
